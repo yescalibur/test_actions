@@ -1,0 +1,13 @@
+name: eslint
+
+on:
+  push:
+
+jobs:
+  format:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Run ESLint
+      run: |
+        npx eslint index.js
